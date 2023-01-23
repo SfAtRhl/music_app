@@ -1,7 +1,8 @@
 import 'package:flutter/cupertino.dart';
-import 'package:mvvm/data/apis/api_response.dart';
-import 'package:mvvm/data/model/media.dart';
-import 'package:mvvm/data/Repository/media_repository.dart';
+import '../../data/apis/api_response.dart';
+import '../../data/apis/api_response.dart';
+import '../../data/model/media.dart';
+import '../../data/Repository/media_repository.dart';
 
 class controllers with ChangeNotifier {
   ApiResponse _apiResponse = ApiResponse.initial('Empty data');

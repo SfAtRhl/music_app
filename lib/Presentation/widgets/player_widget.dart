@@ -2,8 +2,8 @@ import 'dart:async';
 
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
-import 'package:mvvm/data/model/media.dart';
-import 'package:mvvm/Presentation/controllers/controllers.dart';
+import '../../data/model/media.dart';
+import '../../Presentation/controllers/controllers.dart';
 import 'package:provider/provider.dart';
 
 enum PlayerState { stopped, playing, paused }
@@ -239,19 +239,19 @@ class _PlayerWidgetState extends State<PlayerWidget> {
     _durationSubscription = _audioPlayer.onDurationChanged.listen((duration) {
       setState(() => _duration = duration.inMilliseconds);
 
-      if (Theme.of(context).platform == TargetPlatform.iOS) {
-        _audioPlayer.startHeadlessService();
+      // if (Theme.of(context).platform == TargetPlatform.iOS) {
+      //   _audioPlayer.();
 
-        _audioPlayer.setNotification(
-            title: 'App Name',
-            artist: 'Artist or blank',
-            albumTitle: 'Name or blank',
-            imageUrl: 'url or blank',
-            forwardSkipInterval: const Duration(seconds: 30),
-            backwardSkipInterval: const Duration(seconds: 30),
-            duration: duration,
-            elapsedTime: const Duration(seconds: 0));
-      }
+      //   _audioPlayer.setNotification(
+      //       title: 'App Name',
+      //       artist: 'Artist or blank',
+      //       albumTitle: 'Name or blank',
+      //       imageUrl: 'url or blank',
+      //       forwardSkipInterval: const Duration(seconds: 30),
+      //       backwardSkipInterval: const Duration(seconds: 30),
+      //       duration: duration,
+      //       elapsedTime: const Duration(seconds: 0));
+      // }
     });
 
     _positionSubscription =
@@ -261,11 +261,11 @@ class _PlayerWidgetState extends State<PlayerWidget> {
 
     _playerCompleteSubscription =
         _audioPlayer.onPlayerCompletion.listen((event) {
-      // _onComplete();
-      _onReplay();
-      // setState(() {
-      //   _position = _duration;
-      // });
+      _onComplete();
+      // _onReplay();
+      setState(() {
+        _position = _duration;
+      });
     });
 
     _playerErrorSubscription = _audioPlayer.onPlayerError.listen((msg) {
@@ -284,7 +284,7 @@ class _PlayerWidgetState extends State<PlayerWidget> {
     final result = await _audioPlayer.play(media.previewUrl!);
     if (result == 1) setState(() => _playerState = PlayerState.playing);
 
-    _audioPlayer.setPlaybackRate(playbackRate: 1.0);
+    _audioPlayer.setPlaybackRate(1.0);
 
     return result;
   }

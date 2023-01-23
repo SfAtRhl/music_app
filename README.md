@@ -1,16 +1,24 @@
 # Music App
 
-A new Flutter project.
+![ App UI](/Music%20App.png)
 
-## Getting Started
+## Packages we are using:
 
-This project is a starting point for a Flutter application.
+- http: [link](https://pub.dev/packages/http)
+- provider: [link](https://pub.dev/packages/provider)
+- audioplayers: [link](https://pub.dev/packages/audioplayers)
+- flutter_launcher_icons: [link](https://pub.dev/packages/flutter_launcher_icons)
+- loading_animation_widget: [link](https://pub.dev/packages/loading_animation_widget)
+- flutter_svg: [link](https://pub.dev/packages/flutter_svg)
 
-A few resources to get you started if this is your first Flutter project:
+<!-- - rflutter_alert: [link](https://pub.dev/packages/rflutter_alert)
+- material_design_icons_flutter: [link](https://pub.dev/packages/material_design_icons_flutter)
+- sqflite: [link](https://pub.dev/packages/sqflite)
+- path: [link](https://pub.dev/packages/path)
+- flutter_spinkit: [link](https://pub.dev/packages/flutter_spinkit)
+- date_format: [link](https://pub.dev/packages/date_format) -->
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Music App Final UI
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+| ![Search App UI](/search.png) | ![Main Screen App UI](/main.png) |
+| ----------------------------- | -------------------------------- |

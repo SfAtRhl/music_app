@@ -1,5 +1,6 @@
-import 'package:mvvm/data/model/media.dart';
-import 'package:mvvm/data/dataProvider/media_service.dart';
+
+import '../dataProvider/media_service.dart';
+import '../model/media.dart';
 
 class MediaRepository {
   // BaseService _mediaService = MediaService();

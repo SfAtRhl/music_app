@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:mvvm/data/model/media.dart';
-import 'package:mvvm/Presentation/controllers/controllers.dart';
+import '../../data/model/media.dart';
+import '../../Presentation/controllers/controllers.dart';
 import 'package:provider/provider.dart';
 
 class PlayerListWidget extends StatefulWidget {

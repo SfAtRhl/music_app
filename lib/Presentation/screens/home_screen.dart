@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:loading_animation_widget/loading_animation_widget.dart';
-import 'package:mvvm/data/apis/api_response.dart';
-import 'package:mvvm/data/model/media.dart';
-import 'package:mvvm/Presentation/widgets/player_list_widget.dart';
-import 'package:mvvm/Presentation/widgets/player_widget.dart';
-import 'package:mvvm/Presentation/controllers/controllers.dart';
-
 import 'package:provider/provider.dart';
 
+import '../../Presentation/controllers/controllers.dart';
+import '../../Presentation/widgets/player_list_widget.dart';
+import '../../Presentation/widgets/player_widget.dart';
+import '../../data/apis/api_response.dart';
+import '../../data/model/media.dart';
 import '../widgets/SearchWidget.dart';
 
 class HomeScreen extends StatefulWidget {

@@ -1,4 +1,4 @@
-name: mvvm
+name: musicapp
 description: A new Flutter project.
 
 # The following line prevents the package from being accidentally published to
@@ -37,7 +37,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   http: ^0.13.1
   provider: ^5.0.0
-  audioplayers: ^0.18.2
+  audioplayers: ^0.20.0
   flutter_launcher_icons: "^0.11.0"
   loading_animation_widget: ^1.2.0+4
   flutter_svg: ^1.1.6

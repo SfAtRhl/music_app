@@ -2,7 +2,7 @@ import 'dart:convert';
 import 'dart:io';
 import 'package:meta/meta.dart';
 import 'package:http/http.dart' as http;
-import 'package:mvvm/data/apis/app_exception.dart';
+import '../../data/apis/app_exception.dart';
 
 class MediaService {
   @override
